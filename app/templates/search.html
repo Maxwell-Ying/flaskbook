@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>search condition</title>
+    </head>
+    <body>
+        <h1>SEARCH CONDITION </h1>
+        <form action="" method="post" name="search">
+            {{form.hidden_tag()}}
+            <table>
+                <tr>
+                    <td>name:</td>
+                    <td>{{form.name}}</td>
+                </tr>
+                <tr>
+                    <td>author:</td>
+                    <td>{{form.author}}</td>
+                </tr>
+                <tr>
+                    <td>age:</td>
+                    <td>{{form.age}}</td>
+                </tr>
+                <tr>
+                    <td>public:</td>
+                    <td>{{form.public}}</td>
+                </tr>
+                <tr>
+                    <td>home:</td>
+                    <td>{{form.home}}</td>
+                </tr>
+                <tr>
+                    <td>pages:</td>
+                    <td>{{form.pages}}</td>
+                </tr>
+                <tr>
+                    <td>exact:</td>
+                    <td>{{form.exact}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="search"><a href='/index' align='right'>cancel</a></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

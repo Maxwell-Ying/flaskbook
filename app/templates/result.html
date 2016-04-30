@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>search result for {{title}}</title>
+    </head>
+    <body>
+        {% if results %}
+        <table border = '1'>
+        <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>author</td>
+        <td>age</td>
+        <td>public</td>
+        <td>home</td>
+        <td>pages</td>
+        </tr>
+        {% for result in results %}
+        <tr>
+        <td>{{result.id}}</td>
+        <td>{{result.name}}</td>
+        <td>{{result.author}}</td>
+        <td>{{result.age}}</td>
+        <td>{{result.public}}</td>
+        <td>{{result.home}}</td>
+        <td>{{result.pages}}</td>
+        <td><a href = '/deletes/{{result.id}}'>delete</a></td>
+        <td><a href = '/update/{{result.id}}'>update</a></td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <h1>no result found</h1>
+        {% endif %}
+    </body>
+    <a href = '/index'>返回</a>
+</html>

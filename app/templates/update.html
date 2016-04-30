@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>update</title>
+    </head>
+    <body>
+        <h1>UPDATE</h1>
+        <form action="" method="post" name="update">
+            {{form.hidden_tag()}}
+            <table>
+                <tr>
+                    <td>name:</td>
+                    <td>{{form.name}}</td>
+                </tr>
+                <tr>
+                    <td>author:</td>
+                    <td>{{form.author}}{{data.author}}</td>
+                </tr>
+                <tr>
+                    <td>age:</td>
+                    <td>{{form.age}}{{data.age}}</td>
+                </tr>
+                <tr>
+                    <td>public:</td>
+                    <td>{{form.public}}{{data.public}}</td>
+                </tr>
+                <tr>
+                    <td>home:</td>
+                    <td>{{form.home}}{{data.home}}</td>
+                </tr>
+                <tr>
+                    <td>pages:</td>
+                    <td>{{form.pages}}{{data.pages}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="update"></td>
+                    <td><a href='/index'>cancel</a></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

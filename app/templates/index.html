@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>dbms</title>
+    </head>
+    <body>
+        <h1>choose one function</h1>
+        <div>
+            <a href='/add'> add a new entry</a>
+        </div>
+        <div>
+            <a href='/delete'>delete an exist entry</a>
+        </div>
+        <div>
+            <a href='/search'>search something</a>
+        </div>
+        <div>
+            <a href='/showall'>show all</a>
+        </div>
+        <div>
+            {% for message in get_flashed_messages() %}
+            <p>{{message}}</p>
+            {% endfor %}
+        </div>
+    </body>
+</html>

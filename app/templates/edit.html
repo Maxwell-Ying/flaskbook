@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>edit</title>
+    </head>
+    <body>
+        <h1>ADD A NEW ENTRY</h1>
+        <form action="" method="post" name="edit">
+            {{form.hidden_tag()}}
+            <table>
+                <tr>
+                    <td>name:</td>
+                    <td>{{form.name(size = 24)}}</td>
+                </tr>
+                <tr>
+                    <td>author:</td>
+                    <td>{{form.author(size = 24)}}</td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>{{form.age(size = 24)}}</td>
+                </tr>
+                <tr>
+                    <td>public:</td>
+                    <td>{{form.public(size = 24)}}</td>
+                </tr>
+                <tr>
+                    <td>home</td>
+                    <td>{{form.home(size = 24)}}</td>
+                </tr>
+                <tr>
+                    <td>pages</td>
+                    <td>{{form.pages(size = 24)}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="save"></td>
+                    <td><a href='/index'>cancel</a></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
